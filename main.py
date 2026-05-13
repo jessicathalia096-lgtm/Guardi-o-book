@@ -12,7 +12,7 @@ BOT_TOKEN = os.getenv("BOT_TOKEN")
 ADMINS = [8672397104]  # coloque seu ID aqui
 GRUPO_ID = -1003640277537  # coloque o ID do grupo aqui
 
-bot = Bot(TOKEN)
+bot = Bot(BOT_TOKEN)
 dp = Dispatcher()
 
 conn = sqlite3.connect("pedidos.db")
