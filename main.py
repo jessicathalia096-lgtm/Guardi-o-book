@@ -1,3 +1,4 @@
+import os
 import asyncio
 import sqlite3
 import re
@@ -7,7 +8,7 @@ from aiogram.types import Message, CallbackQuery, BotCommand
 from aiogram.filters import Command
 from aiogram.utils.keyboard import InlineKeyboardBuilder
 
-TOKEN = "8759583272:AAEzEEAmtiS2So1lfRugxsWQGFzonqrTM6A"
+BOT_TOKEN = os.getenv("BOT_TOKEN")
 ADMINS = [8672397104]  # coloque seu ID aqui
 GRUPO_ID = -1003640277537  # coloque o ID do grupo aqui
 
